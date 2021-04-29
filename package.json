@@ -28,7 +28,7 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-react": "^7.13.13",
     "@fonticonpicker/react-fonticonpicker": "^1.2.0",
     "@wordpress/compose": "^3.2.0",
     "babel-preset-env": "^1.7.0",
