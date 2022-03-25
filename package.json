@@ -25,7 +25,9 @@
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules -w",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@babel/preset-react": "^7.0.0",
@@ -42,6 +44,8 @@
     "react-transition-group": "^2.9.0",
     "webpack-cli": "^3.3.5",
     "react-sortable-hoc": "^1.11.0",
-    "typed.js": "^2.0.11"
-  }
+    "typed.js": "^2.0.11",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
